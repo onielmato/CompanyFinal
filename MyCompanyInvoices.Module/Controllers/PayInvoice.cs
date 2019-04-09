@@ -30,6 +30,7 @@ namespace MyCompanyInvoices.Module.Controllers
         public PayInvoice()
         {
             TargetObjectType = typeof(Invoice);
+
             popupWindowShowAction = new PopupWindowShowAction(this, "Tipo de Pago", PredefinedCategory.Edit);
             popupWindowShowAction.ImageName = "BO_Sale";
             popupWindowShowAction.CustomizePopupWindowParams += PopupWindowShowAction_CustomizePopupWindowParams;
