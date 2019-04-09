@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Options Id="Options">
+    <LayoutManagerOptions Id="LayoutManagerOptions" RequiredFieldMark="*" />
+  </Options>
+  <Node Id="Validation@b6d0ec0d-7b7f-415e-8e15-91e8dd3d05dd" UnusableNodeName="Validation">
+    <Node Id="Rules@4bcf7766-6d91-46d0-906b-e45339000ea2" UnusableNodeName="Rules">
+      <Node Id="ClientBCity" UnusableNodeName="RuleRequiredField" TargetType="MyCompanyInvoices.Module.BusinessObjects.Client" TargetPropertyName="UserAddress.City" TargetContextIDs="Save" TargetCriteria="[Type] = 'TypeB'" IsNewNode="True" />
+      <Node Id="ClientBPhone" UnusableNodeName="RuleRequiredField" TargetContextIDs="Save" TargetType="MyCompanyInvoices.Module.BusinessObjects.Client" TargetPropertyName="PhoneNumber" TargetCriteria="[Type] = 'TypeB'" CustomMessageTemplate="Phone Number cant be empty" IsNewNode="True" />
+      <Node Id="ClientBState" UnusableNodeName="RuleRequiredField" TargetType="MyCompanyInvoices.Module.BusinessObjects.Client" TargetPropertyName="UserAddress.StateProvince" TargetContextIDs="Save" TargetCriteria="[Type] = 'TypeB'" IsNewNode="True" />
+      <Node Id="ClientBStreet" UnusableNodeName="RuleRequiredField" TargetType="MyCompanyInvoices.Module.BusinessObjects.Client" TargetPropertyName="UserAddress.Street" TargetContextIDs="Save" TargetCriteria="[Type] = 'TypeB'" IsNewNode="True" />
+      <Node Id="ClientBZip" UnusableNodeName="RuleRequiredField" TargetType="MyCompanyInvoices.Module.BusinessObjects.Client" TargetPropertyName="UserAddress.ZipPostal" TargetContextIDs="Save" TargetCriteria="[Type] = 'TypeB'" IsNewNode="True" />
+    </Node>
+  </Node>
+</Application>
